@@ -1,6 +1,8 @@
 package com.vuongtu.model;
 
 import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 @Entity
 @Table(name = "comment")
@@ -54,9 +56,6 @@ private long id;
         return date;
     }
 
-    public void setDate(String date) {
-        this.date = date;
-    }
 
     public String getRating() {
         return rating;
@@ -74,4 +73,9 @@ private long id;
         this.likes = likes;
     }
 
+    public void setDate() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate today = LocalDate.now();
+        this.date = today.format(formatter);
+    }
 }

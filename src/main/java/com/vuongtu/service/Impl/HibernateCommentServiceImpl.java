@@ -45,7 +45,7 @@ public class HibernateCommentServiceImpl implements CommentService {
         origin.setFeedback(comment.getFeedback());
         origin.setAuthor(comment.getAuthor());
         origin.setRating("+ " + comment.getRating());
-        origin.setDate(comment.getDate());
+        origin.setDate();
         session.save(origin);
         transaction.commit();
         return origin;

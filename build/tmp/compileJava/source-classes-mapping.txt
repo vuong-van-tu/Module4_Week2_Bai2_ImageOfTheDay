@@ -2,11 +2,11 @@ com/vuongtu/AppInit.java
  com.vuongtu.AppInit
 com/vuongtu/service/CommentService.java
  com.vuongtu.service.CommentService
-com/vuongtu/model/Comment.java
- com.vuongtu.model.Comment
-com/vuongtu/service/Impl/HibernateCommentServiceImpl.java
- com.vuongtu.service.Impl.HibernateCommentServiceImpl
 com/vuongtu/AppConfig.java
  com.vuongtu.AppConfig
+com/vuongtu/service/Impl/HibernateCommentServiceImpl.java
+ com.vuongtu.service.Impl.HibernateCommentServiceImpl
 com/vuongtu/controller/CommentController.java
  com.vuongtu.controller.CommentController
+com/vuongtu/model/Comment.java
+ com.vuongtu.model.Comment
